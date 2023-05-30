@@ -2,10 +2,7 @@
 
 import networkx as nx
 
-from citation import load_dataset as citation_load_dataset
 from facebook import load_dataset as facebook_load_dataset
-from twitter import load_dataset as twitter_load_dataset
-
 
 from stats import GraphStats
 
@@ -27,8 +24,6 @@ class ModelGenerator():
         stats_model = GraphStats(f"{self.name}_WS", model)
         stats_model.print_summary()
 
-        self.stats.print_summary()
-
     def BA(self, n, m):
         return nx.barabasi_albert_graph(n, m, self.seed)
 
@@ -38,8 +33,6 @@ class ModelGenerator():
         model = self.BA(n, m)
         stats_model = GraphStats(f"{self.name}_BA", model)
         stats_model.print_summary()
-
-        self.stats.print_summary()
 
 
 def main(dataset_loader):

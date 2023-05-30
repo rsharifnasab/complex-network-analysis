@@ -36,7 +36,7 @@ class CommunityDetection():
 
     def community_stats(self, verbose=False) -> str:
         res = ""
-        res += f"----{self.name}----\n"
+        res += f"{self.name} Graph\n"
         comms = self.find_communities()
         modularity = self.modularity(comms)
         res += f"modularity: {modularity}\n"

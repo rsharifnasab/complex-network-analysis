@@ -204,6 +204,7 @@ class GraphStats:
             if i != 0:
                 print("| ", end="")
             print(line)
+        print()
 
     @ staticmethod
     def apply(tup):
@@ -218,7 +219,7 @@ class GraphStats:
 
     def summary_generator(self):
         tasks = [
-            (f"\n\n{self.name} Graph N:{self.node_count()} E:{self.edges_count()}",),
+            (f"\n{self.name} Graph N:{self.node_count()} E:{self.edges_count()}",),
             ("avg degree:", self.average_degree),
             ("density:", self.density),
             ("diameter:", self.diameter),
