@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from collections import defaultdict
 import networkx as nx
 
 from facebook import load_dataset as facebook_load_dataset
