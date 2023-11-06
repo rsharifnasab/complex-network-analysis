@@ -1,5 +1,5 @@
 # Complex Network Analysis
-Set of tools to analysis a complex network and extract some metrics
+Set of tools to analyze a complex network and extract some metrics
 
 
 
@@ -11,7 +11,7 @@ pip3 install -r ./requirements.txt
 
 ## Use
 
-Feel free to explore different files. there is a main function to demo capabilities of each file. There is also a `main.py` which load dataset and perform all kind of tasks on it!
+Feel free to explore different files. There is a main function to demo the capabilities of each component. There is also a `main.py` which load the dataset and perform all kind of tasks on it!
 
 ```sh
 cd src
@@ -48,7 +48,7 @@ if __name__ == "__main__":
 ```
 
 ## Add my dataset
-for each dataset there should be a `load_dataset` function. This function is a flexible way of importing a dataset with any structure! At the end just report G and name of the dataset. Note that there is an optional assertion of number of nodes and edges that can be utilized to make sure all lines of the files is read correctly.
+For each dataset, there should be a `load_dataset` function. This function is a flexible way of importing a dataset with any structure! At the end, just report G and the name of the dataset. Note that there is an optional assertion of a number of nodes and edges that can be utilized to make sure all lines of the files are read correctly.
 
 ```python
 dataset_path = "../datasets/facebook.txt"
