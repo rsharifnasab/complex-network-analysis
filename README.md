@@ -1,5 +1,5 @@
 # Complex Network Analysis
-Set of tools to analyze a complex network and extract some metrics
+Set of tools to analyze a complex network and extract some metrics with Networks.
 
 
 
